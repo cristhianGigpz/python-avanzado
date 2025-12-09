@@ -1,0 +1,56 @@
+======CORREGIDO======
+- AGREGAR + PADDING HASTA 100PX (falta validar)
+- APLICAR ANCHO DE LA PAGINA (o EL POST ESTILO BLOG), PARECE Q ROMPE EL LAYOUT AVENTURAS (se mejoro)
+- COMMIT:(se corrigio layout aventures, como tiene 2 divisores se mando, a ambos destinos si no pasan de 2 post en la pagina)
+- COMMIT: se corrigio padding-top en page, cambio dinamico, falto el px, 180625
+- AL EDITAR POST-TEXT LA OPCION DE EDITAR CONTENT ESTA DESHABILITADA
+- EN LA OPCION DE STATIC EN POST TEXT, NO DEBE APARECER CURSOR TIPO ZOOM
+- EN EL LAYOUT COMIC TENIENDO UN POST BLOG - AL SELECCIONAR TODO SE VE NEGRO, DEBE TENER LETRAS BLANCAS
+- ANCHO DE PAGINA EN LAYOUT SECCIONES NO DEBE SER RESPETADO Y TOMAR EL 100% A TODAS
+- AGREGAR MAS FORMATOS DE 7X2, 8X2, 9X2 Y 10X2
+- AGREGAR OPCION PARA MARGIN
+- QUITAR SIGNIN EN INDEX, SOLO DEJAR OATH DE SERVICIOS COMO GOOGLE, FACE, ETC.
+- AL BUSCAR USER SE MUESTRA UNDEFINIED COMO APELLIDO SI NO TIENE
+- PERMITIR GRILLA MIN EN LAYOUT FOTOS
+- AL ELEGIR POST HORIZONTAL EN NUEVA PUBLICACION NO SE APLICA, SE TIENE QUE MODIFICAR PARA QUE SE APLIQUE
+- SE ENCONTRO ERROR EN COMPONENTE CREATECARD, falto validar existencia user.last_name y se aplico ruta absoluta en  user.path
+- DAR MAS TIEMPO PARA CONSTRUIR WEB EN VISTA ANONIMO, A VECES HACE FALTA, SE AUMENTO DE 3000 A 3500ms en world.js
+- ERROR FALTO PASAR EL HOME DE SRC A PUBLIC, HAY Q COPIAR Y VOLVER A SUBIR,
+- ERROR EN COMENTARIO LARGO, NO SE QUIEBRA A LA SIGUIENTE LINEA, se aplico correccion en app y world css
+- avatar en vista completa de articulo, problema en el avatar al comentar en vista doc, no se ve la img de avatar x default
+- se valido en signinfacebook, signingithub y signingoogle el error auth/account-exists-with-different-credential y se muestra el mensaje para el usuario inicie con el metodo de registro original
+- falta hacer uglyfy (converitr) el archivo pageList.js que tiene un cambio para aplicar container__min y subir
+- se ha mejorado css para adaptarse a dispositivos en world, index y home, se aplico cambios en su html y css, se aplico formatos: 1536,1280,1024,768 y 640px
+- Mejorar el call to action de index con una clase con el mismo nombre y en los medias queries
+- falta hacer uglyfy (converitr) el archivo styleAlbum.js que tiene un cambio para poder aplicar container__min en layout fotos
+- se mejoro estilos para docs.html en doc.css
+- SE ESTA MEJORANDO LAYOUT SECCIONES, cuando es post debe permitir a 600px como maximo y minimo
+- limitando h2 de los titulos en page wolrd para los post y post-text que no exceda los 24px
+- se ha mejorado estilos a comentarios, separando a izquierda y derecha si como chat los comentarios del propietario y otros, tambien mejor el padding, se valido container__min card front img para layout redsocial
+- cambiar el texto: la web de tus ideas, a blanco, no se ve ahora
+- SE HIZO AJUSTES PARA GOOGLE SEARCH, PARA CUMPLIR REQUISITOS DE LA PANTALLA DE CONSENTIMIENTO, SE AGREGO ENLACE DE PRIVACY EN INDEX
+- volver a cambiar subportada2 y subportada3 png, por el blanco
+- se hizo ajustes para resolucion movil para video ytb y fuentes en dimensiones menores a 640px, se ha mejorado estilos de para container comments, en app y world css
+- se aplico un alto minimo de 24px para title de flayer, se cambio object-fit: contain a cover como esta antes para los post card
+- SE AGREGO ANIMACION AL CREAR UN NUEVO POST
+- se agrego en la etiqueta head un link canonical del home
+- se mejoro style redsocial para el layout album, ahora permite aplicar este estilo en ese layout, y se corrigio un bug en stylealbum
+- se hizo ajustes de height en card y card2 para la descripcion, para app y world css
+- se aplico efecto rotacion solo para post y post-text, cambios en postList - se valido que el efecto al crear nuevo post o post-text no se aplique en world, 300725-1150
+- se quito el bloqueo de estilos en layout styleComic, y se aplico important a itemcomic en world.css, para poder aplicar stilo redsocial
+- se agrego titles horizontal format y ID  para contenedor, en revision esta opcion y se agrego swReload a true para cuando se edite txtpagealto, se oculto clase .alinear-h para post tipo container
+- se aplico validaciones a distintos tipos de galery, tambien se agrego title para mostrar cantidad de imagen requeridas en cada uno, 020825-1251"
+- se mejoro imagenes de index html, tambien se agrego efecto aparecer a estas y mejoro posicion dinamica de ellas
+- se agrego finetuning al gitignore, se mejoro desing y contenido de error404 y mejoro design de docs.html
+- se mejor recorte de texto para post con fomat x2 y1, en createpost y extraertext
+- AL EDITAR POST GALERY BANNER AUTO, NO DEBE PERMITR SOLO BORRAR, PUES NO DEJA CAMBIAR LAS IMAGENES
+- se mejor alineacion de txtsearch y se implemento busqueda en doc.js y news.js
+- se esta haciendo la ui para generar items con ia con la api de openai
+- se implemento generacion de articulos con ia de openai en local exitoso, falta subir a remoto
+- se aplico server de render en deploy ok, falta subir cambios a firebase
+- se mejoro y valido responsive de layout galerysecciones
+- se aplico chkcut para cortar o no el texto x defecto se corta
+- se aplico extraerText al cortar texto y al desactivar se dejo todo, usando javascript para ser dinamico
+- se corrigio bugs al editar galery, no eliminaba fotos faltaba actualizar el data-img de referencia
+- ya se crea la vista inicial y estructura completa de los posts tipo y en top y bottom, en post especial container, 200925-1054
+-- se corrigio bug al editar post, agregando un nuevo valor a la coleccion, ahora falta editar quitando valor de la coleccion, tambien falta eliminar imgs al quitar todo el post especial container,
