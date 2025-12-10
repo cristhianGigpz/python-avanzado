@@ -21,3 +21,30 @@ async def main() -> None:
     print("Resultados:", resultados)
 
 asyncio.run(main())
+
+"""
+import time
+from time import sleep
+
+def tarea_larga(nombre:str, segundos: int) -> str:
+    inicio = time.perf_counter()
+    print(f"Iniciando {nombre} larga de {segundos} segundos...")
+    sleep(segundos)
+    print(f"Tarea {nombre} completada.")
+    fin = time.perf_counter()
+    print(f"Tiempo de ejecución de {nombre}: {fin - inicio:.2f} segundos")
+    return f"Resultado después de {segundos} segundos"
+
+
+def main()-> None:
+    inicio_total = time.perf_counter()
+    print("Iniciando programa principal...")
+    resultados = [tarea_larga("Tarea 1", 5), tarea_larga("Tarea 2", 3), tarea_larga("Tarea 3", 4)]
+    print("Programa principal completado.")
+    fin_total = time.perf_counter()
+    print(f"Tiempo total de ejecución: {fin_total - inicio_total:.2f} segundos")
+    print("Resultados:", resultados)
+
+main()
+"""
+
